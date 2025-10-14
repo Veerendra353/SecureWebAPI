@@ -34,9 +34,9 @@ namespace SecureMongoApi.Controllers
                     request.Password,
                     request.Roles);
 
-                _logger.LogInformation("User registered successfully: {Email}", request.Email);
+                _logger.LogInformation("User Registered Successfully: {Email}", request.Email);
 
-                return Ok(new { Message = "User registered successfully" });
+                return Ok(new { Message = "User Registered Successfully" });
             }
             catch (InvalidOperationException ex)
             {

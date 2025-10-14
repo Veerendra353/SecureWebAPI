@@ -51,7 +51,7 @@ namespace SecureMongoApi.Controllers
             var (user, token) = await _authService.LoginAsync(request.Email, request.Password);
 
             if (user == null)
-                return Unauthorized(new { Message = "Invalid credentials" });
+                return Unauthorized(new { Message = "Invalid Credentials" });
 
             _logger.LogInformation("User logged in: {Email}", request.Email);
 

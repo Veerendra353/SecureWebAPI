@@ -33,7 +33,7 @@ namespace SecureMongoApi.Controllers
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error getting all products");
+                _logger.LogError(ex, "Error while fetching all products");
                 return StatusCode(500, new { Message = "Internal server error" });
             }
         }
